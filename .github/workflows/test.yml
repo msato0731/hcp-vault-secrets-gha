@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run a one-line script
+      - name: Run a multi-line script
         run: |
           if [ ${{ secrets.USER_NAME }} = "hoge" ]; then
             echo "true"
